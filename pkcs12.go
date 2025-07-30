@@ -657,6 +657,7 @@ func (enc *Encoder) EncodeWithFriendlyName(friendlyName string, privateKey inter
 	}
 	pkcs12Attributes := []pkcs12Attribute{localKeyIdAttr}
 
+	//asn1 values are in line with the implementation in EncodeTrustStoreEntries
 	if len(friendlyName) != 0 {
 		bmpFriendlyName, err := bmpString(friendlyName)
 		if err != nil {
