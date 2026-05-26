@@ -1,6 +1,10 @@
-# package pkcs12
+WARNING: This repo is an internal-only experiment and is not owned or maintained.
 
-[![Documentation](https://pkg.go.dev/badge/software.sslmate.com/src/go-pkcs12)](https://pkg.go.dev/software.sslmate.com/src/go-pkcs12)
+WARNING: We won't respond to security issues here and there are no guarantees that anything will work.
+
+We recommend you use the upstream package `software.sslmate.com/src/go-pkcs12`
+
+# package pkcs12
 
     import "github.com/cert-manager/go-pkcs12" 
 
@@ -16,16 +20,3 @@ allows BER encoding.  This is because encoding/asn1 only supports DER.
 This package is forked from `golang.org/x/crypto/pkcs12`, which is frozen.
 The implementation is distilled from https://tools.ietf.org/html/rfc7292
 and referenced documents.
-
-## Import Path
-
-Note that although the source code and issue tracker for this package are hosted
-on GitHub, the import path is:
-
-    github.com/cert-manager/go-pkcs12 
-
-Please be sure to use this path when you `go get` and `import` this package.
-
-## Report Issues / Send Patches
-
-Open an issue or PR at https://github.com/cert-manager/go-pkcs12
